@@ -1,0 +1,7 @@
+exports[`Link renders a span when active 1`] = `<span />`;
+
+exports[`Link renders without crashing 1`] = `
+<a
+  href="#"
+  onClick={[Function]} />
+`;

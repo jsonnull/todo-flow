@@ -11,7 +11,7 @@ export type Props = {
   onTodoClick: (id: Id) => void
 };
 
-const TodoList = ({ todos, onTodoClick }: Props) => (
+const TodoList = ({ todos = [], onTodoClick }: Props) => (
   <ul>
     {todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />

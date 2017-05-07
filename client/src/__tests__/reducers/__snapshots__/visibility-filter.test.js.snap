@@ -1,0 +1,1 @@
+exports[`visibilityFilter reducer should handle SET_VISIBILITY_FILTER 1`] = `"SHOW_ACTIVE"`;

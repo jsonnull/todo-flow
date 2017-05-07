@@ -1,0 +1,34 @@
+exports[`App renders without crashing 1`] = `
+<div>
+  <div>
+    <form
+      onSubmit={[Function]}>
+      <input />
+      <button
+        type="submit">
+        Add Todo
+      </button>
+    </form>
+  </div>
+  <ul />
+  <p>
+    Show:
+     
+    <span>
+      All
+    </span>
+    , 
+    <a
+      href="#"
+      onClick={[Function]}>
+      Active
+    </a>
+    , 
+    <a
+      href="#"
+      onClick={[Function]}>
+      Completed
+    </a>
+  </p>
+</div>
+`;

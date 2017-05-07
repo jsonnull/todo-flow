@@ -1,17 +1,17 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import renderer from 'react-test-renderer';
 
 import reducer from '../../reducers';
-import App from '../../components/app';
+import Footer from '../../components/footer';
 
-describe('App', () => {
+describe('Footer', () => {
   it('renders without crashing', () => {
     const store = createStore(reducer);
     const component = renderer.create(
-      <Provider store={store}><App /></Provider>
+      <Provider store={store}><Footer /></Provider>
     );
-    expect(component).toMatchSnapshot();
+    expect(component).toMatchSnapshot(1);
   });
 });

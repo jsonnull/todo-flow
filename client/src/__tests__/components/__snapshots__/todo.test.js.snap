@@ -1,0 +1,9 @@
+exports[`Todo renders without crashing 1`] = `
+<li
+  onClick={undefined}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  } />
+`;

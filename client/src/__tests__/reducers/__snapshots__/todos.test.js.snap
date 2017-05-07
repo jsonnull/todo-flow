@@ -1,0 +1,19 @@
+exports[`todos reducer should handle ADD_TODO 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Test AddTodo",
+  },
+]
+`;
+
+exports[`todos reducer should handle TOGGLE_TODO 1`] = `
+Array [
+  Object {
+    "completed": true,
+    "id": 0,
+    "text": "Test AddTodo",
+  },
+]
+`;
