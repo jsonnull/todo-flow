@@ -15,7 +15,7 @@ type OwnProps = {
 
 const mapStateToProps = (state: State, ownProps) => {
   return {
-    active: ownProps.filter === state.visibilityFilter
+    active: state.visibilityFilter === ownProps.filter
   };
 };
 

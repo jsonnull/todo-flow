@@ -2,24 +2,14 @@
 
 import type { Todos, Todo, Id, Text, Action } from '../types';
 
-function createTodo(id: Id, text: Text): Todo {
-  return {
-    id,
-    text,
-    completed: false
-  };
-}
+const createTodo = (id: Id, text: Text): Todo => ({
+  id,
+  text,
+  completed: false
+});
 
-function toggleTodo(todos: Todos, id: Id): Todos {
-  return todos.map(t => {
-    if (t.id !== id) {
-      return t;
-    }
-    return Object.assign({}, t, {
-      completed: !t.completed
-    });
-  });
-}
+const toggleTodo = (todos: Todos, id: Id): Todos =>
+  todos.map(t => (t.id !== id ? t : { ...t, completed: !t.completed }));
 
 const todos = (state: Todos = [], action: Action): Todos => {
   switch (action.type) {

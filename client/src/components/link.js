@@ -16,8 +16,8 @@ const Link = ({ active, children, onClick }: Props) => {
   return (
     <a
       href="#"
-      onClick={(e: Event) => {
-        e.preventDefault();
+      onClick={(event: Event) => {
+        event.preventDefault();
         onClick();
       }}
     >
