@@ -12,16 +12,16 @@ export const addTodo = (text: Text): Action => {
   };
 };
 
-export const setVisibilityFilter = (filter: VisibilityFilter): Action => {
-  return {
-    type: 'SET_VISIBILITY_FILTER',
-    filter
-  };
-};
-
 export const toggleTodo = (id: Id): Action => {
   return {
     type: 'TOGGLE_TODO',
     id
+  };
+};
+
+export const setVisibilityFilter = (filter: VisibilityFilter): Action => {
+  return {
+    type: 'SET_VISIBILITY_FILTER',
+    filter
   };
 };

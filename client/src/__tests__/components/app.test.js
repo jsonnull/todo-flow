@@ -5,9 +5,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
 
-import App from './app';
-
-import type { Store } from '../types';
+import App from '../../components/app';
 
 const middlewares = [];
 const mockStore = configureMockStore(middlewares);
