@@ -1,0 +1,114 @@
+exports[`VisibleTodoList renders without crashing 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }>
+    Test AddTodo
+  </li>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "line-through",
+      }
+    }>
+    Test AddTodo
+  </li>
+</ul>
+`;
+
+exports[`VisibleTodoList shows active todos when SHOW_ACTIVE filter is active 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }>
+    Test AddTodo
+  </li>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "line-through",
+      }
+    }>
+    Test AddTodo
+  </li>
+</ul>
+`;
+
+exports[`VisibleTodoList shows all todos when SHOW_ALL filter is active 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }>
+    Test AddTodo
+  </li>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "line-through",
+      }
+    }>
+    Test AddTodo
+  </li>
+</ul>
+`;
+
+exports[`VisibleTodoList shows completed todos when SHOW_COMPLETED filter is active 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }>
+    Test AddTodo
+  </li>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "line-through",
+      }
+    }>
+    Test AddTodo
+  </li>
+</ul>
+`;
+
+exports[`VisibleTodoList toggles todos when a todo is clicked 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }>
+    Test AddTodo
+  </li>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "line-through",
+      }
+    }>
+    Test AddTodo
+  </li>
+</ul>
+`;

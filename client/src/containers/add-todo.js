@@ -9,10 +9,10 @@ import type { Dispatch } from '../types';
 import type { Connector } from 'react-redux';
 
 type Props = {
-  dispatch: Dispatch
+  addTodo: (text: string) => Dispatch
 };
 
-const AddTodo = ({ dispatch }) => {
+const AddTodo = ({ addTodo }) => {
   let input: HTMLInputElement;
 
   return (
@@ -23,7 +23,7 @@ const AddTodo = ({ dispatch }) => {
           if (!input.value.trim()) {
             return;
           }
-          dispatch(addTodo(input.value));
+          addTodo(input.value);
           input.value = '';
         }}
       >
@@ -40,6 +40,12 @@ const AddTodo = ({ dispatch }) => {
   );
 };
 
-const connector: Connector<{}, Props> = connect();
+const mapDispatchToProps = (dispatch: Dispatch, ownProps) => {
+  return {
+    addTodo: text => dispatch(addTodo(text))
+  };
+};
+
+const connector: Connector<{}, Props> = connect(undefined, mapDispatchToProps);
 
 export default connector(AddTodo);

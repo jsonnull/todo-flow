@@ -1,0 +1,7 @@
+exports[`FilterLink renders without crashing 1`] = `<span />`;
+
+exports[`FilterLink sets the correct filter when clicked 1`] = `
+<a
+  href="#"
+  onClick={[Function]} />
+`;

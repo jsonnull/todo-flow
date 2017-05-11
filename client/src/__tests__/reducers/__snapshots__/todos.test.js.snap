@@ -15,5 +15,10 @@ Array [
     "id": 0,
     "text": "Test AddTodo",
   },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Test AddTodo",
+  },
 ]
 `;

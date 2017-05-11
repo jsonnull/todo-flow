@@ -7,7 +7,8 @@ import Link from '../components/link';
 
 import type { Connector } from 'react-redux';
 import type { Props } from '../components/link';
-import type { State, Dispatch, VisibilityFilter } from '../types';
+import type { State, Dispatch } from '../types';
+import type { VisibilityFilter } from '../types/visibilityFilter';
 
 type OwnProps = {
   filter: VisibilityFilter

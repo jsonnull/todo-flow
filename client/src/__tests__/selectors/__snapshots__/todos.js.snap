@@ -1,0 +1,31 @@
+exports[`todos reducer should handle SHOW_ACTIVE 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Test Todo",
+  },
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Test Todo",
+  },
+]
+`;
+
+exports[`todos reducer should handle SHOW_ALL 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Test Todo",
+  },
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Test Todo",
+  },
+]
+`;
+
+exports[`todos reducer should handle SHOW_COMPLETED 1`] = `Array []`;

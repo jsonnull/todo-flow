@@ -7,11 +7,13 @@ import reducer from '../../reducers';
 import Footer from '../../components/footer';
 
 describe('Footer', () => {
+  let tree;
   it('renders without crashing', () => {
     const store = createStore(reducer);
     const component = renderer.create(
       <Provider store={store}><Footer /></Provider>
     );
-    expect(component).toMatchSnapshot(1);
+    tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

@@ -1,4 +1,16 @@
-exports[`Link renders a span when active 1`] = `<span />`;
+exports[`Link calls onClick() on click 1`] = `
+<a
+  href="#"
+  onClick={[Function]} />
+`;
+
+exports[`Link calls onClick() on click 2`] = `
+<a
+  href="#"
+  onClick={[Function]} />
+`;
+
+exports[`Link renders a span when active is true 1`] = `<span />`;
 
 exports[`Link renders without crashing 1`] = `
 <a

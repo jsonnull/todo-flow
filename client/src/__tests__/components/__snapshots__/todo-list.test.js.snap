@@ -1,1 +1,27 @@
-exports[`TodoList renders without crashing 1`] = `<ul />`;
+exports[`TodoList with todos passes onTodoClick into child todo 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }>
+    Test AddTodo
+  </li>
+</ul>
+`;
+
+exports[`TodoList with todos renders a list of todos 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }>
+    Test AddTodo
+  </li>
+</ul>
+`;

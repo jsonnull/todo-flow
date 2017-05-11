@@ -1,15 +1,9 @@
-// @flow
-
 import * as actions from '../../actions';
 import todos from '../../reducers/todos';
 
 describe('todos reducer', () => {
   it('should handle ADD_TODO', () => {
-    const initialState = [];
-
-    expect(
-      todos(initialState, actions.addTodo('Test AddTodo'))
-    ).toMatchSnapshot();
+    expect(todos(undefined, actions.addTodo('Test AddTodo'))).toMatchSnapshot();
   });
 
   it('should handle TOGGLE_TODO', () => {
@@ -18,6 +12,11 @@ describe('todos reducer', () => {
         text: 'Test AddTodo',
         completed: false,
         id: 0
+      },
+      {
+        text: 'Test AddTodo',
+        completed: true,
+        id: 1
       }
     ];
 

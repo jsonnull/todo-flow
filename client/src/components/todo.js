@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import type { Text } from '../types';
+import type { Text } from '../types/todos';
 
 export type Props = {
   onClick: () => void,

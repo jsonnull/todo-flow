@@ -4,7 +4,7 @@ import React from 'react';
 
 import Todo from './todo';
 
-import type { Todos, Id } from '../types';
+import type { Todos, Id } from '../types/todos';
 
 export type Props = {
   todos: Todos,
