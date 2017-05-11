@@ -6,8 +6,6 @@ import { Provider } from 'react-redux';
 import reducer from '../../reducers';
 import AddTodo from '../../containers/add-todo';
 
-jest.mock('containers/add-todo', () => 'AddTodo');
-
 describe('AddTodo', () => {
   let tree;
   let store;
